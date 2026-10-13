@@ -1,0 +1,42 @@
+{
+  "contract": "1.0",
+  "id": "ux-queue",
+  "name": "The UX agent's review queue",
+  "blurb": "one document per artefact to review; the agent writes a review and never edits the work",
+  "container": {"kind": "doc-folder", "path": "<queue_dir>/<target>", "skip": ["README.md"]},
+  "groups": {"kind": "field", "key": "group", "label": "client",
+             "note": "the client folder the item sits in"},
+  "lanes": {"kind": "state"},
+  "states": {
+    "backlog": "Backlog",
+    "ready": "To review",
+    "doing": "Reviewing",
+    "review": "Waiting for you",
+    "blocked": "Blocked",
+    "done": "Done"
+  },
+  "owners": ["me", "ux-agent"],
+  "hints": {
+    "Backlog": "not queued yet",
+    "To review": "the agent reviews it at its next scheduled hour",
+    "Reviewing": "the agent has it right now",
+    "Waiting for you": "a review is written; read it and answer its open questions",
+    "Blocked": "failed three times, or needs something from you first",
+    "Done": "read and dealt with"
+  },
+  "fields": [
+    {"key": "actor", "type": "string", "own": true},
+    {"key": "job", "type": "string", "own": true},
+    {"key": "angle", "type": "string", "own": true},
+    {"key": "product", "type": "string", "own": true},
+    {"key": "persona", "type": "string", "own": true},
+    {"key": "artefact", "type": "string", "own": true, "note": "a URL, or a file path from the agent's folder"},
+    {"key": "review", "type": "string", "own": true, "note": "written by the runner: where the review landed"}
+  ],
+  "writer": {
+    "who": "ux-agent",
+    "how": {"kind": "subprocess", "cwd": "<agent_root>", "apply": ["python3", "run.py", "--stream-apply"]},
+    "lock": "<agent_root>/state/.queue.lock"
+  },
+  "views": ["board"]
+}

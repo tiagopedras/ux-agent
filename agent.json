@@ -1,0 +1,12 @@
+{
+  "contract": "1.7",
+  "id": "ux-agent",
+  "name": "UX agent",
+  "cwd": ".",
+  "doc": "README.md",
+  "wake": ["python3", "run.py", "--wake"],
+  "state": ["python3", "run.py", "--state"],
+  "apply": ["python3", "run.py", "--apply"],
+  "run": ["python3", "run.py", "--run"],
+  "activity": ["python3", "run.py", "--activity"]
+}

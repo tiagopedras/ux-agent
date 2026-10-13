@@ -1,0 +1,11 @@
+.welcomed
+state/
+__pycache__/
+clients/
+queue/
+reviews/
+evals/
+config.json
+COORDINATION.md
+IMPROVEMENTS.md
+.omc/
