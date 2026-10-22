@@ -177,8 +177,11 @@ added, and any open questions. Nothing else.
 
 ## After the review
 
-- **He wants findings logged in the reviewed repo's backlog:** use `improve-idea`, one entry
-  per finding, pointing back at `review.md`.
+- **Findings and suggestions he agreed with:** list them and ask whether to log them in the
+  reviewed repo's `IMPROVEMENTS.md`, one entry each. The question names the repo, and says
+  plainly when it has no `IMPROVEMENTS.md` yet, so a yes also means creating one. On a yes,
+  use `improve-idea`, one entry per item, pointing back at `review.md`, then note in
+  `review.md` which findings were logged and where. Write nothing without the yes.
 - **He disagrees:** hold the point where the backing stands up, fold when he makes the
   stronger case. If he says to drop it, or stays unconvinced, record it with `ux-learn` as a
   dispute.
@@ -190,6 +193,7 @@ added, and any open questions. Nothing else.
 
 When run off the queue, there is nobody to ask. Refuse an item without actor, job and angle.
 Skip step 4's questions and put them under "Open questions" at the top of the review, mark the
-verdict provisional, and post nothing to Figma. Add no sources to either knowledge layer:
+verdict provisional, and post nothing to Figma. Log nothing to any backlog: list the findings
+that would be candidates under "Open questions" too. Add no sources to either knowledge layer:
 list any worth keeping under "Sources added" as links, for the owner to add with
 `ux-add-reference`.
