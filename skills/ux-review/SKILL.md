@@ -52,22 +52,32 @@ If they have none, carry on.
 below, as written, before asking anything. Then create the file (empty) and carry on with
 step 1 in the same message. Show the block again whenever he asks how the review works.
 
-> **How a review works**
+> **UX review**
 >
-> 1. **Who, what and why.** I'll ask who this is for, what they're trying to get done, and
->    what you want the review to judge against. If there's saved context for your company or
->    product, I'll ask before using it.
-> 2. **I look, then I ask.** I capture the work, map the journey step by step, and ask about
->    the decisions that look deliberate before judging any of them.
-> 3. **Findings name what happens to the person.** Each one is backed by your evidence, a
->    named source, or marked as my judgement. If I don't know something, I look it up and
->    keep the source.
-> 4. **The verdict is a suggestion.** Ship, fix these, or rethink, with every finding listed
->    underneath so you can disagree with it.
-> 5. **Nothing leaves without your yes.** I never edit the work, and I post nothing to Figma
->    or anywhere else unless you approve it.
-> 6. **I learn from you.** Corrections become rules I follow next time. Where we disagree, I
->    record both views and what would settle it.
+> I review the experience of a journey, from a live page, screenshots, a Figma frame or a
+> plan, and tell you what happens to the person using it. Pick a way to use me, or just share
+> the work and I'll do the full review:
+>
+> - **Quick check.** One screen, a short list of what a person would trip on.
+> - **Plan review.** A plan or brief, before anything is drawn.
+> - **Accessibility only.** Just that angle, nothing else judged.
+> - **Alternatives without a verdict.** Two or three other shapes for the same job, with
+>   what each costs.
+> - **Second pass with client context.** I reuse the saved company and product context, and
+>   ask before I apply it.
+> - **Log agreed findings.** Once we've talked it through, I add the ones you agree with to
+>   the repo's backlog.
+>
+> What to expect:
+>
+> - I ask who it's for, what they're trying to get done and what to judge against, then ask
+>   why about the decisions that look deliberate, before I judge any of them.
+> - Each finding names what happens to the person, backed by your evidence, a named source,
+>   or marked as my judgement. The verdict is a suggestion, and every finding is listed so
+>   you can disagree.
+> - I keep client and product context, sources and lessons between reviews. Corrections
+>   become rules I follow next time. Where we disagree, I record both views.
+> - I never edit the work, and nothing goes to Figma or anywhere else without your yes.
 
 ## 1. The angle
 
